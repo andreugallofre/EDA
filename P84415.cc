@@ -2,7 +2,7 @@
 #include <map>
 #include <iostream>
 using namespace std;
-
+void no_cpy();
 int main() {
 	map<string, int> dic;
 	string instr;
