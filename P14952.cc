@@ -35,8 +35,9 @@ int main() {
         while(not pq.empty()) {
             int x = pq.top(); pq.pop();
 
-            if(primer){ cout << -x; primer = false;}
-            else cout << " " << -x;
+            if(primer){ primer = false;}
+            else cout << " ";
+            cout << -x; 
 
             for (int y : G[-x])
                 if (--grau[y] == 0) pq.push(-y);
